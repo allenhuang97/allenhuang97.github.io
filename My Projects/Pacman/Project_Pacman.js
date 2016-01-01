@@ -5,5 +5,6 @@ $(document).ready(function(){
   		dots: true,
 		adaptiveHeight: true,
         slidesToShow: 1,
+		initialSlide: 0
 	});
 });
