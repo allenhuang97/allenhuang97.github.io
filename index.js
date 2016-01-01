@@ -1,18 +1,16 @@
-var main = function(){
+/*var main = function(){
 	"use strict";
-	$('#IDAboutMe').fadeTo(1, 0.5);
-	$('#IDProjects').fadeTo(1, 0.5);
-   $('#IDAboutMe').mouseover(function(){
-	    $('#IDAboutMe').fadeTo(1, 1);
+   $('.Home_About_Me').mouseover(function(){
+	    $('.Home_About_Me').fadeTo(1, 1);
    });
-   $('#IDAboutMe').mouseleave(function(){
-        $('#IDAboutMe').fadeTo(1, 0.5);
+   $('.Home_About_Me').mouseleave(function(){
+        $('.Home_About_Me').fadeTo(1, 0.5);
     });
-   $('#IDProjects').mouseover(function(){
-	    $('#IDProjects').fadeTo(1, 1);
+   $('.Home_My_Projects').mouseover(function(){
+	    $('.Home_My_Projects').fadeTo(1, 1);
    });
-   $('#IDProjects').mouseleave(function(){
-        $('#IDProjects').fadeTo(1, 0.5);
+   $('.Home_My_Projects').mouseleave(function(){
+        $('.Home_My_Projects').fadeTo(1, 0.5);
     });
 };
-$(document).ready(main);
+$(document).ready(main);*/
