@@ -1,4 +1,4 @@
-.Project-Pacman{
+.Project_Pacman{
   	position: fixed;
 	top: 0;
 	left: 0;
@@ -6,9 +6,31 @@
 	height: 100%;
   	background-image: url("resources/Pacman Carousel Background.jpg");
 	overflow: scroll;
+	opacity: 0;
 }
 
-.carousel-back{
+.navBar{
+	margin-top: 1%;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-radius: 5px;
+	background-color: #D0D0D0;
+	border-style: solid;
+	border-width: 0.1%;
+	border-color: white;
+}
+
+.navBar li{
+	padding-top: 0.25%;
+	padding-bottom: 0.25%;
+	padding-left: 0.25%;
+}
+
+.navBar a{
+	color: black;	
+}
+
+.carousel_back{
 	background-color: #000000;
 	margin-top: 2%;
 	margin-left: 5%;
