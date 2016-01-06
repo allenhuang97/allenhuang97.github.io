@@ -18,4 +18,19 @@ $(document).ready(function() {
             });
         }
     });
+	$('#Tower-Defense-Block').mouseenter(function() {
+        if (this.clientHeight === 333) {
+            $(this).animate({
+                height: '+=10px'
+            });
+        }
+    });
+    $('#Tower-Defense-Block').mouseleave(function() {
+        if (this.clientHeight > 333) {
+            var changeInHeight = this.clientHeight - 333;
+            $(this).animate({
+                height: 'changeInHeight'
+            });
+        }
+    });
 });
