@@ -1,35 +1,45 @@
+var PacmanAnimate = 0;
+var TowerAnimate = 0;
+
 $(document).ready(function() {
     "use strict";
-	$('.Project_Page').animate({
-		opacity: 1
-	},1000);
+    $('.Project_Page').animate({
+        opacity: 1
+    }, 1000);
     $('#Pacman-Block').mouseenter(function() {
-        if (this.clientHeight === 333) {
+        if ($('#Pacman-Block').is(':animated')) {} else {
+            PacmanAnimate = 0;
             $(this).animate({
-                height: '+=10px'
+                width: '+=10px'
             });
         }
     });
     $('#Pacman-Block').mouseleave(function() {
-        if (this.clientHeight > 333) {
-            var changeInHeight = this.clientHeight - 333;
+        console.log(PacmanAnimate);
+
+        if (PacmanAnimate === 0) {
+            console.log("Run");
+            PacmanAnimate = 1;
+            console.log("After: " + PacmanAnimate);
             $(this).animate({
-                height: 'changeInHeight'
+                width: '-=10px',
             });
+
         }
     });
-	$('#Tower-Defense-Block').mouseenter(function() {
-        if (this.clientHeight === 333) {
+    $('#Tower-Defense-Block').mouseenter(function() {
+        if ($('#Tower-Defense-Block').is(':animated')) {} else {
+            TowerAnimate = 0;
             $(this).animate({
-                height: '+=10px'
+                width: '+=10px'
             });
         }
     });
     $('#Tower-Defense-Block').mouseleave(function() {
-        if (this.clientHeight > 333) {
-            var changeInHeight = this.clientHeight - 333;
+        if (TowerAnimate === 0) {
+            TowerAnimate = 1;
             $(this).animate({
-                height: 'changeInHeight'
+                width: '-=10px'
             });
         }
     });
