@@ -39,3 +39,21 @@
 	margin-right: 15%;
 }
 
+.navBar {
+	margin-top: 1%;
+	margin-left: 15%;
+	margin-right: 15%;
+	border-radius: 5px;
+	background-color: #FFF846;
+	border-style: solid;
+	border-width: 0.1%;
+	border-color: black;
+}
+.navBar li {
+	padding-top: 0.25%;
+	padding-bottom: 0.25%;
+	padding-left: 0.25%;
+}
+.navBar a {
+	color: black;
+}
