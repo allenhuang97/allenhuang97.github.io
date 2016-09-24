@@ -5,6 +5,7 @@ body{
     padding-left: 15%;
     padding-right: 15%;
     padding-top: 3%;
+    padding-bottom: 5%;
     text-align:center;
     overflow: scroll;
 }
@@ -67,12 +68,12 @@ body{
     opacity: 0.5;
     height: 150px;
     border-radius: 10px;
+    background-color: #66ceff;
     background-image: url(resources/about_me.png);
     animation-name:animateMove;
     animation-duration: 2s;
     background-repeat:no-repeat;
     background-position: center center;
-    background-size: 100% 100%;
 }
 
 .Home_About_Me:hover{
@@ -124,4 +125,22 @@ body{
 
 .Home_Github:hover{
     opacity: 1;
+}
+
+.Home_Resume h1{
+    color: white;
+    font-size: 40pt;
+    line-height: 150px;
+    font-variant: small-caps;
+    vertical-align: middle;
+}
+
+.Home_Resume{
+    height: 150px;
+    background-color: #C0C0C0;
+    border-radius: 10px;
+    animation-name:animateMove;
+    animation-duration: 2s;
+    background-position: center center;
+    background-size: auto 100%;
 }
