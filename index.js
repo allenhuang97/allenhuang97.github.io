@@ -1,23 +1,23 @@
 $(document).ready(function() {
     "use strict";
-    $('#About_Me_Block').mouseenter(function() {
+    $('.Home_About_Me').mouseenter(function() {
         $(this).attr("style", "background-image: url(resources/about_me.gif);");
     });
-    $('#About_Me_Block').mouseleave(function() {
+    $('.Home_About_Me').mouseleave(function() {
         $(this).attr("style", "background-image: url(resources/about_me.png);");
     });
-    $('#My_Projects_Block').mouseenter(function() {
+    $('.Home_My_Projects').mouseenter(function() {
         $(this).attr("style", "background-image: url(resources/project.gif);");
     });
-    $('#My_Projects_Block').mouseleave(function() {
+    $('.Home_My_Projects').mouseleave(function() {
         $(this).attr("style", "background-image: url(resources/project.png);");
     });
-                  $('#Github_Block').mouseenter(function() {
-                                                     $(this).attr("style", "background-image: url(resources/githubBlock.gif);");
-                                                     });
-                  $('#Github_Block').mouseleave(function() {
-                                                     $(this).attr("style", "background-image: url(resources/github1.png);");
-                                                     });
+    $('.Home_Github').mouseenter(function() {
+        $(this).attr("style", "background-image: url(resources/githubBlock.gif);");
+    });
+    $('.Home_Github').mouseleave(function() {
+        $(this).attr("style", "background-image: url(resources/github1.png);");
+    });
 });
 /*
 function changeImg() {

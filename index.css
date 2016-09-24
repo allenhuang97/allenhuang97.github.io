@@ -1,24 +1,22 @@
 @charset "utf-8";
-
-.Home_Page{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(resources/homeBack.jpeg);
-    background-repeat:no-repeat;
-    background-position: center center;
-    background-size: 1920px 1080px;
-    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, seri;
-    letter-spacing:0.1em;
+body{
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    background-image: url(resources/homeBack.jpg);
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
     text-align:center;
     overflow: scroll;
 }
 
+.Home_Page{
+    background-image: url(resources/darkBack.jpg);
+    padding: 5%;
+    border-radius: 20px;
+}
+
 .Home_Page h3{
     font-size: 18pt;
-    font-variant: small-caps;
 }
 
 .Home_Page h4{
@@ -28,14 +26,21 @@
 .Home_Page p{
     text-align: center;
 }
+
+.Home_Welcome h1{
+    color: #FFFAF0;
+}
+
+.Home_Welcome h3{
+    color: #FFFAF0;
+}
+
 @keyframes animateWelcome{
     from{opacity: 0;}
     to{opacity:1;}
 }
 .Home_Welcome{
-  padding-top: 25px;
-    height: 200px;
-    margin-bottom: -19px;
+    margin-bottom: 2%;
     animation-name:animateOpacity;
     animation-duration: 2s;
 }
@@ -48,22 +53,23 @@
 @keyframes animateMove{
     0% {opacity:0;}
     50% {margin-top: -200px;opacity:0;}
-    100% {margin-top: -19px;opacity:0.5;}
+    100% {margin-top: 0 px;opacity:0.5;}
 }
 
 .Home_About_Me h1{
     font-size: 40pt;
     color: black;
-    padding-top: 80px;
+    line-height: 150px;
     font-variant: small-caps;
 }
 
 .Home_About_Me{
-    height: 200px;
     opacity: 0.5;
+    height: 150px;
+    border-radius: 10px;
+    background-image: url(resources/about_me.png);
     animation-name:animateMove;
     animation-duration: 2s;
-    margin-top: -19px;
     background-repeat:no-repeat;
     background-position: center center;
     background-size: 100% 100%;
@@ -76,18 +82,18 @@
 .Home_My_Projects h1{
     font-size: 40pt;
     color: black;
-    padding-top: 80px;
+    line-height: 150px;
     font-variant: small-caps;
 }
 
 .Home_My_Projects{
-    margin-top: -200px;
-    height: 200px;
     background-color: #FF9900;
+    height: 150px;
     opacity: 0.5;
+    border-radius: 10px;
     animation-name:animateMove;
     animation-duration: 2s;
-    margin-top:-19px;
+    background-image: url(resources/project.png);
     background-repeat:no-repeat;
     background-position: center center;
     background-size: 100% 100%;
@@ -100,18 +106,18 @@
 .Home_Github h1{
     color: white;
     font-size: 40pt;
-    padding-top: 80px;
+    line-height: 150px;
     font-variant: small-caps;
+    vertical-align: middle;
 }
 .Home_Github{
-    margin-top: -200px;
-    height: 200px;
+    height: 150px;
     background-color: #9933CC;
+    border-radius: 10px;
     opacity: 0.5;
     animation-name:animateMove;
     animation-duration: 2s;
-    margin-top:-19px;
-    
+    background-image: url(resources/github1.png);
     background-position: center center;
     background-size: auto 100%;
 }
