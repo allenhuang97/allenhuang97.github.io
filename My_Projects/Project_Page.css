@@ -9,17 +9,13 @@
 }
 
 body{
-	background-image: url("resources/background.png");
+	background-image: url("resources/background.jpg");
 	animation-name: animateStartUp;
 	animation-duration: 1s;
 	font-family: Copperplate Gothic Light, sans-serif;
 	text-align: center;
 	overflow: scroll;
 	padding-bottom: 300px;
-}
-
-.container-fluid{
-	background-color: #C0C0C0;
 }
 
 .navbar-header{
@@ -38,11 +34,13 @@ body{
 .Project_Page h2{
 	margin-top: 2%;
 	margin-bottom: 3%;
+	color: #FDF5E6;
 }
 
 .Project_Page h3{
 	font-size: 18px;
 	margin-top: -10px;
+	color: #FDF5E6;
 }
 
 .Project-Blocks{
