@@ -57,6 +57,7 @@
 	margin-left: 5%;
 	margin-right: 5%;
 	margin-bottom: 7%;
+	padding-bottom: 5%;
 	border-color: white;
 	border-style: solid;
 	border-width: 1%;
@@ -74,6 +75,7 @@
 .description p {
 	font-size: 18px;
 }
-.finalLine {
-	padding-bottom: 5%;
+.description button{
+	margin-top: 2%;
 }
+

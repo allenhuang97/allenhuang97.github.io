@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>R Spatiotemp Project</title>
+<link rel = "stylesheet" href = "Project_CharRecog.css">
+<link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel = "icon" href = "../../Site icon.png" sizes="16x16" type="image/png">
+</head>
+
+<body>
+<div class = "Project_Pacman">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="">My Projects</a>
+          </div>
+          <ul class="nav navbar-nav">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../About_Me/About_Me.html">About Me</a></li>
+              <li class = "active"><a href="../Project_Page.html">My Projects</a></li>
+              <li><a href="https://github.com/allenhuang97">My GitHub</a></li>
+              <li><a href="">My Resume</a></li>
+          </ul>
+      </div>
+  </nav>
+  <div class = "description">
+    <h1>Single Digit Number Recognition Project</h1>
+    <p>This is a project I decided to try after seeing the algorithm online. It is a simple algorithm which produces good results.</p> 
+    <p>It is also computationally inexpensive and thus very fast in comparison to other bulkier algorithms.</p>
+    <h4>The Algorithm</h4>
+    <p>Like all other data driven methods, this one consists of two phases, a training phase and a testing phase.
+    <h4>Training</h4>
+    <ol>
+      <li>Greyscaling</li>
+      <li>Bitmapping</li>
+      <li>Storing</li>
+    </ol>
+    <p>Greyscaling: The training image set is first greyscaled since our output does not depend on color. This makes the testing phase easier and the algorithm perform better.</p>
+    <p>Bitmapping: This is the step where the image is converted to a matrix of numbers. The color of each pixel in the image corresponds to a floating point number. Converting each pixel to a number will produce a matrix of numbers that can be used to represent that image, that matrix is called a bitmap.
+    <p>Storing: Finally, once all the images are converted to their respective bitmaps they are stored and used as the trained model for prediction in the testing phase.
+
+    <h4>Testing</h4>
+    <ol>
+      <li>Greyscaling/Bitmapping</li>
+      <li>minDist Similarity Measure</li>
+      <li>k-NN comparison</li>
+    </ol>
+    <p>Greyscaling/Bitmapping: Once a image is selected for testing it must go through steps 1 and 2 in the training phase before it can be used for prediction</p>
+    <p>minDist Similarity Measure: The test bitmap is then compared against each training bitmap using the minDist method. The minDist method is simply the Euclidean Distance between the two bitmaps(matrices).</p>
+    <p>k-NN comparison: This step uses k-Nearest Neighbours algorithm to select a predicted value from the similarity measure values produced from the previous step.</p>
+    <a href="https://github.com/allenhuang97/CharRecog"><button type="button" class="btn btn-default btn-md">Project on GitHub</button></a>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src = "jquery-migrate-1.2.1.js"></script>
+<script type="text/javascript" src="../slick/slick.min.js"></script>
+<script src = "Project_CharRecog.js"></script>
+</html>
