@@ -1,146 +1,56 @@
-@charset "utf-8";
 body{
-    font-family: Tahoma, Verdana, Segoe, sans-serif;
-    background-image: url(resources/homeBack.jpg);
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 3%;
-    padding-bottom: 5%;
-    text-align:center;
-    overflow: scroll;
+  margin: 0;
 }
 
-.Home_Page{
-    background-image: url(resources/darkBack.jpg);
-    padding: 5%;
-    border-radius: 20px;
+#page_block_1 {
+  height: 100%;
+  background-color: black;
+  text-align: center;
 }
 
-.Home_Page h3{
-    font-size: 18pt;
+#page_block_1__name {
+  color: white;
+  display: inline-block;
+  margin-top: 13%;
+  padding: 2em;
+  border: solid white 3px;
+  font-size: 1.5em;
+  font-family: Verdana, Geneva, sans-serif;
 }
 
-.Home_Page h4{
-    font-size: 16pt;
+#page_block_1__name h1{
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
 }
 
-.Home_Page p{
-    text-align: center;
+#page_block_1__description {
+  width: 100%;
 }
 
-.Home_Welcome h1{
-    color: #FFFAF0;
+#page_block_1__description {
+  width: auto;
+  background-color: white;
+  margin-top: 2em;
+  margin-left: 35%;
+  margin-right: 35%;
+  -webkit-margin-after: 0;
+  padding: 1em;
+  font-size: 1em;
+  font-family: Verdana, Geneva, sans-serif;
 }
 
-.Home_Welcome h3{
-    color: #FFFAF0;
+#page_block_1__icons{
+  margin-top: 5%;
 }
 
-@keyframes animateWelcome{
-    from{opacity: 0;}
-    to{opacity:1;}
-}
-.Home_Welcome{
-    margin-bottom: 2%;
-    animation-name:animateOpacity;
-    animation-duration: 2s;
-}
-
-@keyframes animateOpacity{
-    from{opacity:0;}
-    to{opacity:0.5;}
-}
-
-@keyframes animateMove{
-    0% {opacity:0;}
-    50% {margin-top: -200px;opacity:0;}
-    100% {margin-top: 0 px;opacity:0.5;}
-}
-
-.Home_About_Me h1{
-    font-size: 40pt;
-    color: black;
-    line-height: 150px;
-    font-variant: small-caps;
-}
-
-.Home_About_Me{
-    opacity: 0.5;
-    height: 150px;
-    border-radius: 10px;
-    background-color: #66ceff;
-    background-image: url(resources/about_me.png);
-    animation-name:animateMove;
-    animation-duration: 2s;
-    background-repeat:no-repeat;
-    background-position: center center;
-}
-
-.Home_About_Me:hover{
-    opacity: 1;
-}
-
-.Home_My_Projects h1{
-    font-size: 40pt;
-    color: black;
-    line-height: 150px;
-    font-variant: small-caps;
-}
-
-.Home_My_Projects{
-    background-color: #FF9900;
-    height: 150px;
-    opacity: 0.5;
-    border-radius: 10px;
-    animation-name:animateMove;
-    animation-duration: 2s;
-    background-image: url(resources/project.png);
-    background-repeat:no-repeat;
-    background-position: center center;
-    background-size: 100% 100%;
-}
-
-.Home_My_Projects:hover{
-    opacity: 1;
-}
-
-.Home_Github h1{
-    color: white;
-    font-size: 40pt;
-    line-height: 150px;
-    font-variant: small-caps;
-    vertical-align: middle;
-}
-.Home_Github{
-    height: 150px;
-    background-color: #9933CC;
-    border-radius: 10px;
-    opacity: 0.5;
-    animation-name:animateMove;
-    animation-duration: 2s;
-    background-image: url(resources/github1.png);
-    background-position: center center;
-    background-size: auto 100%;
-}
-
-.Home_Github:hover{
-    opacity: 1;
-}
-
-.Home_Resume h1{
-    color: white;
-    font-size: 40pt;
-    line-height: 150px;
-    font-variant: small-caps;
-    vertical-align: middle;
-}
-
-.Home_Resume{
-    height: 150px;
-    background-color: #C0C0C0;
-    border-radius: 10px;
-    animation-name:animateMove;
-    animation-duration: 2s;
-    background-position: center center;
-    background-size: auto 100%;
+.btn-circle {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+  border-color: grey;
+  color: white;
+  background-color: black;
 }
