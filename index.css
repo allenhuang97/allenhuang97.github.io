@@ -165,7 +165,7 @@ body{
   width: 30%;
   font-weight: bold;
 }
-#page_block_2__contact_content p{
+#page_block_2__contact_content p {
   padding-bottom: 40px;
   font-family: Verdana, Geneva, sans-serif;
   font-size: 12px;
@@ -178,4 +178,16 @@ body{
 
 #page_block_3 {
   height: 100%;
+  background-color: #DCDCDC;
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-align: center;
 }
+
+#page_block_3__experience {
+  padding-top: 1%;
+}
+
+#page_block_4 {
+  height: 100%;
+}
+
