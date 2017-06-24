@@ -2,6 +2,20 @@ body{
   margin: 0;
 }
 
+#btn_up button{
+  font-size: 20px;
+  background-color: transparent;
+  color: black;
+  border-color: black;
+  margin: 0;
+  padding: 0;
+}
+#btn_up {
+  position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
 #page_block_1 {
   height: 100%;
   background-color: black;
@@ -70,7 +84,6 @@ body{
 .tooltips {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
 }
 
 .tooltips .tooltip-text {
@@ -178,6 +191,7 @@ body{
 
 #page_block_3 {
   height: 100%;
+  margin: 0;
   background-color: #DCDCDC;
   font-family: "Arial Black", Gadget, sans-serif;
   text-align: center;
@@ -189,5 +203,13 @@ body{
 
 #page_block_4 {
   height: 100%;
+  margin: 0;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+#page_block_4 h1 {
+  text-align: center;
+  padding-top: 5%;
+  margin-bottom: 0;
 }
 
