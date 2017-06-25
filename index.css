@@ -38,18 +38,14 @@ body{
 }
 
 #page_block_1__description {
-  width: 100%;
-}
-
-#page_block_1__description {
   width: auto;
   background-color: white;
   margin-top: 2em;
-  margin-left: 35%;
-  margin-right: 35%;
+  margin-left: 30%;
+  margin-right: 30%;
   -webkit-margin-after: 0;
   padding: 1em;
-  font-size: 1em;
+  font-size: 1.25em;
   font-family: "Arial Black", Gadget, sans-serif;
 }
 
@@ -159,7 +155,6 @@ body{
 
 #page_block_2 h2 {
   font-size: 24px;
-  text-decoration: underline;
 }
 
 #page_block_2 img {
@@ -170,23 +165,11 @@ body{
 }
 
 #page_block_2__contact_content {
-  display: flex;
   padding-top: 45px;
 }
 
-#page_block_2__contact_header {
-  width: 30%;
-  font-weight: bold;
-}
-#page_block_2__contact_content p {
-  padding-bottom: 40px;
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 12px;
-}
-
-#page_block_2__contact_info {
-  float: right;
-  width: 50%;
+#page_block_2__contact_content a p {
+  padding-bottom: 15px;
 }
 
 #page_block_3 {
