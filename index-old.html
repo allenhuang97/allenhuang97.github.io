@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/f1f9239018.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <link rel = "stylesheet" href = "index.css">
+    <link rel = "stylesheet" href = "timeline.css">
+  </head>
+  <body>
+    <div id="page_block_1">
+      <div id="page_block_1__name">
+        <h1>ALLEN HUANG</h1>
+      </div>
+      <h1 class="text-center" id="page_block_1__description">Computer Engineering - University of Waterloo</h1>
+      <div id="page_block_1__icons">
+        <a class="tooltips icons-margin-right smooth-scroll" href="#page_block_2"><button class="btn btn-default btn-circle" id="btn-user"><i class="glyphicon glyphicon-user"></i></button><span class="tooltip-text">About Me</span></a>
+        <a class="tooltips icons-margin-right smooth-scroll" href="#page_block_3"><button class="btn btn-default btn-circle" id="btn-user"><i class="fa fa-suitcase"></i></button><span class="tooltip-text">My Experience</span></a>
+        <!-- <a class="tooltips icons-margin-right smooth-scroll" href="#page_block_4"><button class="btn btn-default btn-circle" id="btn-user"><i class="fa fa-folder-open"></i></button><span class="tooltip-text">My Projects</span></a> -->
+        <a class="tooltips icons-margin-right" href="Allen_Huang_Resume.pdf" target="_blank"><button class="btn btn-default btn-circle" id="btn-user"><i class="fa fa-file-text"></i></button><span class="tooltip-text">My Resume</span></a>
+        <a class="tooltips" href="https://github.com/allenhuang97/" target="_blank"><button class="btn btn-default btn-circle" id="btn-github"><i class="fa fa-github"></i></button><span class="tooltip-text">My Github</span></a>
+        </div>
+      </div>
+    </div>
+    <div id="page_block_2">
+      <h1>ABOUT ME</h1>
+      <div id="page_block_2__story">
+        <h2>My Story</h2>
+        <p>Hi! My name is Allen Huang and I am a Computer Engineering student at the University of Waterloo. I like programming and tech in general. I enjoy playing foosball, ping pong and board games. Some of my favourite board games are Avalon, Citadels, Coup and Settlers of Catan.</p>
+      </div>
+      <img src="about_me.png">
+      <div id="page_block_2__contact">
+        <h2>Contact</h2>
+        <div id="page_block_2__contact_content">
+          <p>Personal Email:</p>
+          <a href="mailto:allen.weixi.huang@gmail.com"><p>allen.weixi.huang@gmail.com</p></a>
+          <p>University Email:</p>
+          <a href="mailto:aw2huang@edu.uwaterloo.ca"><p>aw2huang@edu.uwaterloo.ca</p></a>
+          <p>Phone Number:</p>            
+          <p>(647) 787-4617</p>
+        </div>
+      </div>
+    </div>
+    <div id="page_block_3">
+      <div id="page_block_3__experience">
+        <h1>MY EXPERIENCE</h1>
+        <ul class="timeline">
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <span class="flag">CAPITAL ONE</span>
+                <span class="time-wrapper"><span class="time">Jan - April 2017</span></span>
+              </div>
+              <div class="desc">
+                <h1>Software Developer Intern</h1>
+                <p>Developed deploy pipeline using Jenkins, decreasing deploy time from 2 weeks to 30 mins. Wrote and updated multiple infrastructure modules using Ansible, Bash and AWS. Built scalable and resilient infrastructure to host and deploy content using Terraform scripts. Used AWS’ caching, cross-region replication and DDoS-prevention to ensure 0% downtime. Created 30 webpages using AngularJS, embedded JavaScript, Contentful and Node.js.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <span class="flag">UNIVERSITY OF WATERLOO</span>
+                <span class="time-wrapper"><span class="time">May - Aug 2016</span></span>
+              </div>
+              <div class="desc">
+                <h1>Research Assistant</h1>
+                <p>Developed algorithms for data analysis and machine learning in R and C++. Investigated various branches of machine learning such as Markov Models, and Neural Nets. Implemented methods for data analysis including Wavelet Packets and Fourier Transforms. Benchmarked and optimized machine learning algorithms using concurrent programming. Wrote extensive documentation and detailed reports for both code and performance results</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a class="smooth-scroll" href="#page_block_1" id="btn_up"><button class="btn btn-default btn-circle"><i class="fa fa-arrow-up"></i></button></a>
+  </body>
+</html>

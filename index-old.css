@@ -1,0 +1,198 @@
+body{
+  margin: 0;
+}
+
+#btn_up button{
+  font-size: 20px;
+  background-color: transparent;
+  color: black;
+  border-color: black;
+  margin: 0;
+  padding: 0;
+}
+#btn_up {
+  position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+#page_block_1 {
+  height: 100%;
+  background-color: black;
+  text-align: center;
+}
+
+#page_block_1__name {
+  color: white;
+  display: inline-block;
+  margin-top: 13%;
+  padding: 2em;
+  border: solid white 3px;
+  font-size: 1.5em;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+#page_block_1__name h1{
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+#page_block_1__description {
+  width: auto;
+  background-color: white;
+  margin-top: 2em;
+  margin-left: 30%;
+  margin-right: 30%;
+  -webkit-margin-after: 0;
+  padding: 1em;
+  font-size: 1.25em;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+#page_block_1__icons{
+  margin-top: 4%;
+}
+
+.btn-circle {
+  width: 50px;
+  height: 50px;
+  line-height: 1.33;
+  border-width: 3px;
+  border-radius: 25px;
+  border-color: grey;
+  padding: 0;
+  color: white;
+  background-color: black;
+}
+
+.icons-margin-right {
+  margin-right: 1%;
+}
+
+#btn-user {
+  font-size: 18px;
+}
+
+#btn-github {
+  font-size: 26px;
+}
+
+.tooltips {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltips .tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.tooltips .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltips:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+#page_block_2 {
+  height: 100%;
+  margin: 0;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+#page_block_2 h1 {
+  text-align: center;
+  padding-top: 5%;
+  margin-bottom: 0;
+}
+
+#page_block_2__story {
+  float: left;
+  width: 40%;
+  padding-left: 15%;
+  padding-right: 4%;
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+#page_block_2__story p {
+  padding-top: 45px;
+  font-size: 12px;
+  line-height: 200%;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: ;
+}
+
+#page_block_2__contact {
+  float: left;
+  width: 40%;
+  padding-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+#page_block_2 h2 {
+  font-size: 24px;
+}
+
+#page_block_2 img {
+  float: left;
+  border-radius: 50%;
+  margin-top: 10%;
+  width: 20%;
+}
+
+#page_block_2__contact_content {
+  padding-top: 45px;
+}
+
+#page_block_2__contact_content a p {
+  padding-bottom: 15px;
+}
+
+#page_block_3 {
+  height: 100%;
+  margin: 0;
+  background-color: #DCDCDC;
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-align: center;
+}
+
+#page_block_3__experience {
+  padding-top: 1%;
+}
+
+#page_block_4 {
+  height: 100%;
+  margin: 0;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+#page_block_4 h1 {
+  text-align: center;
+  padding-top: 5%;
+  margin-bottom: 0;
+}
+

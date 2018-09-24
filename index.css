@@ -1,198 +1,191 @@
-body{
+body {
   margin: 0;
+  overflow-x: hidden;
 }
 
-#btn_up button{
-  font-size: 20px;
-  background-color: transparent;
-  color: black;
-  border-color: black;
-  margin: 0;
-  padding: 0;
-}
-#btn_up {
-  position: fixed;
-    bottom: 5px;
-    right: 5px;
+a {
+  text-decoration: none;
 }
 
-#page_block_1 {
+.homeContainer {
+  background-color: black;
+  width: 100%;
   height: 100%;
-  background-color: black;
-  text-align: center;
 }
 
-#page_block_1__name {
-  color: white;
-  display: inline-block;
-  margin-top: 13%;
-  padding: 2em;
-  border: solid white 3px;
-  font-size: 1.5em;
-  font-family: "Arial Black", Gadget, sans-serif;
+.homeContentContainer {
+  display: table;
+  width: 100%;
+  height: 100%;
 }
 
-#page_block_1__name h1{
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
+.nameContainer {
+  width: 50%;
+  padding-right: 15px;
+  display: table-cell;
+  vertical-align: middle;
+  border-right: solid 1px grey;
 }
 
-#page_block_1__description {
-  width: auto;
-  background-color: white;
-  margin-top: 2em;
-  margin-left: 30%;
-  margin-right: 30%;
-  -webkit-margin-after: 0;
-  padding: 1em;
-  font-size: 1.25em;
-  font-family: "Arial Black", Gadget, sans-serif;
-}
-
-#page_block_1__icons{
-  margin-top: 4%;
-}
-
-.btn-circle {
-  width: 50px;
-  height: 50px;
-  line-height: 1.33;
-  border-width: 3px;
-  border-radius: 25px;
-  border-color: grey;
-  padding: 0;
-  color: white;
-  background-color: black;
-}
-
-.icons-margin-right {
-  margin-right: 1%;
-}
-
-#btn-user {
-  font-size: 18px;
-}
-
-#btn-github {
-  font-size: 26px;
-}
-
-.tooltips {
-    position: relative;
-    display: inline-block;
-}
-
-.tooltips .tooltip-text {
-    visibility: hidden;
-    width: 120px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
+@keyframes nameAnimation {
+  from {
+    transform: translateX(-50px);
     opacity: 0;
-    transition: opacity 1s;
-    font-family: "Arial Black", Gadget, sans-serif;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-.tooltips .tooltip-text::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-.tooltips:hover .tooltip-text {
-  visibility: visible;
-  opacity: 1;
-}
-
-#page_block_2 {
-  height: 100%;
-  margin: 0;
+.firstName {
   font-family: "Arial Black", Gadget, sans-serif;
+  color: white;
+  font-size: 70px;
+  text-align: right;
+  animation-name: nameAnimation;
+  animation-duration: 0.5s;
 }
 
-#page_block_2 h1 {
-  text-align: center;
-  padding-top: 5%;
-  margin-bottom: 0;
+.lastName {
+  font-family: "Arial Black", Gadget, sans-serif;
+  color: white;
+  font-size: 70px;
+  text-align: right;
+  animation-name: nameAnimation;
+  animation-duration: 1s;
 }
 
-#page_block_2__story {
-  float: left;
-  width: 40%;
-  padding-left: 15%;
-  padding-right: 4%;
-  margin-top: 5%;
-  margin-bottom: 0;
+.linkContainer {
+  width: 50%;
+  display: table-cell;
+  vertical-align: middle;
 }
 
-#page_block_2__story p {
-  padding-top: 45px;
-  font-size: 12px;
-  line-height: 200%;
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: ;
+@keyframes linkAnimation {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-#page_block_2__contact {
-  float: left;
-  width: 40%;
-  padding-left: 5%;
-  margin-top: 5%;
-  margin-bottom: 0;
+.link {
+  font-family: "Arial", Gadget, sans-serif;
+  color: white;
+  font-size: 40px;
+  padding: 5px 0 5px 15px;
+  animation-name: linkAnimation;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-#page_block_2 h2 {
-  font-size: 24px;
+.link:hover {
+  background-color: grey;
 }
 
-#page_block_2 img {
-  float: left;
-  border-radius: 50%;
-  margin-top: 10%;
+.linkAboutMe {
+  animation-duration: 0.5s;
+}
+
+.linkResume {
+  animation-duration: 0.75s;
+}
+
+.linkGithub {
+  animation-duration: 1s;
+}
+
+.aboutMeContainer {
+  width: 100%;
+  height: 100%;
+  background-color: Gainsboro;
+  display: table;
+}
+
+.aboutMeBody {
+  width: 80%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.aboutMeName {
+  font-family: "Arial Black", Gadget, sans-serif;
+  color: #333;
+  font-size: 40px;
+  margin: 0 100px;
+  border-bottom: solid 1px grey;
+}
+
+.aboutMeProgram {
+  font-family: "Arial", Gadget, sans-serif;
+  color: #333;
+  font-size: 14px;
+  margin: 0 100px;
+  padding: 5px 0;
+  border-bottom: solid 1px grey;
+  font-style: italic;
+}
+
+.aboutMeContent {
+  margin: 0 100px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-family: "Arial", Gadget, sans-serif;
+  border-bottom: solid 1px grey;
+}
+
+.aboutMeImgContainer {
   width: 20%;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 100px;
 }
 
-#page_block_2__contact_content {
-  padding-top: 45px;
+.aboutMeImg {
+  border-radius: 50%;
 }
 
-#page_block_2__contact_content a p {
-  padding-bottom: 15px;
+.aboutMeEmailTitle {
+  display: inline-block;
+  font-family: "Arial", Gadget, sans-serif;
+  padding-top: 5px;
+  margin-left: 100px;
 }
 
-#page_block_3 {
-  height: 100%;
-  margin: 0;
-  background-color: #DCDCDC;
-  font-family: "Arial Black", Gadget, sans-serif;
-  text-align: center;
+.aboutMeEmail {
+  display: inline-block;
+  font-family: "Arial", Gadget, sans-serif;
+  padding-top: 5px;
 }
 
-#page_block_3__experience {
-  padding-top: 1%;
+.aboutMePhoneNumber {
+  display: inline-block;
+  font-family: "Arial", Gadget, sans-serif;
+  padding-top: 5px;
+  margin-left: 20px;
 }
 
-#page_block_4 {
-  height: 100%;
-  margin: 0;
-  font-family: "Arial Black", Gadget, sans-serif;
-}
+@media (max-width: 980px) {
+  .aboutMeImgContainer {
+    display: block;
+    padding: 0;
+    width: auto;
+    text-align: center;
+  }
 
-#page_block_4 h1 {
-  text-align: center;
-  padding-top: 5%;
-  margin-bottom: 0;
-}
+  .aboutMeImg {
+    width: 240px;
+    margin-top: 30px;
+  }
 
+  .aboutMeBody {
+    display: block;
+    margin: 0 auto;
+  }
+}
